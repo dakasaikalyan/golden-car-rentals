@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Golden Car Rentals - Local Hyderabad Edition</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FFB800",
+                        "dark-bg": "#121212",
+                        "card-bg": "#1A1A1A",
+                        "border-dark": "#2A2A2A",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            html { scroll-behavior: smooth; }
+            body { 
+                font-family: 'Manrope', sans-serif; 
+                @apply bg-dark-bg text-white;
+            }
+        }
+        .luxury-gradient {
+            background: linear-gradient(145deg, #1A1A1A 0%, #121212 100%);
+        }
+        .car-card-overlay {
+            background: linear-gradient(to top, rgba(18,18,18,1) 0%, rgba(18,18,18,0.4) 50%, rgba(18,18,18,0) 100%);
+        }
+        .img-zoom {
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .group:hover .img-zoom {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="transition-colors duration-300 selection:bg-primary/30 selection:text-primary">
+<header class="sticky top-0 z-50 w-full bg-dark-bg/80 backdrop-blur-xl border-b border-border-dark">
+<div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
+</div>
+<h2 class="text-xl font-extrabold tracking-tighter text-white">GOLDEN CARS</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#fleet">Fleet</a>
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#pricing">Pricing</a>
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#booking">Get Quote</a>
+<a class="text-sm font-semibold text-gray-400 hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-lg font-bold text-sm hover:brightness-110 transition-all shadow-[0_0_15px_rgba(255,184,0,0.4)]">
+<span class="material-symbols-outlined text-sm">translate</span>
+<span>తెలుగు | EN</span>
+</button>
+<div class="size-10 rounded-full bg-cover bg-center border-2 border-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAz45I-PzNN3jbhp0yAqTZv7g_x3f92ewkIBbXZ97DevlDtL_GucrDTb7dKPYGuRRGzDBoZ4JgmppXa6YmBeZzf-ivy_lFJUzBvql-feSo_DvJAhosS-dnhu1qfWdVumEAa3Vhg6rWX049gtwT2IMdpKh_NuSeIOT4ccFvN-YRmEo6cRLmxw52_64ZYE82dxQJL7OKy1xCMUsd1qsTDf66JHiwMzplw1Saa51hEWX0zQVS8VHbkmfbYIlNeyfjQQ6hLhEKvFHLXdY");'></div>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-4 md:px-10">
+<section class="py-16 md:py-24 @container">
+<div class="flex flex-col gap-12 @[864px]:flex-row items-center">
+<div class="w-full flex-1 aspect-video bg-cover bg-center rounded-2xl shadow-2xl border border-border-dark overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center img-zoom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOGtg0k2h-t2KjlBDH0eP0MXWG_YoMG2NKPjNfMlNOyG2blcImNPbG3Ahves5gJspQbhfnzTCAMAjR9qxUYFQP9xl7dAfP6Jq4TIiiOoCGvcgCPj2aDo7n9wmx2enY8XsD8f2t89Z5QM4700m1LuvgW--L8nDjk8IV_WfDKZRvpbu5Nxu9ehsMvua6W48nsPpMjv0kntWV-ILgf1FLP5zm1ZneFQ9DDaSJboAYpDzbRmN87P85k-88e-zhTuvSY6p73HvicAWq3jo");'></div>
+</div>
+<div class="flex flex-col gap-6 flex-1">
+<span class="text-primary font-bold tracking-[0.2em] text-sm uppercase">Nagole, Hyderabad</span>
+<h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tight">
+                    Premium Rentals &amp; <span class="text-primary">Foam Wash</span>
+</h1>
+<p class="text-lg text-gray-400 leading-relaxed max-w-lg">
+                    The gold standard in car rentals and detailing in Hyderabad. From daily commutes to luxury events, we have the perfect ride for you.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary text-black px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform inline-block shadow-[0_0_20px_rgba(255,184,0,0.3)]" href="https://wa.me/919347049626">
+                        WhatsApp for Quote
+                    </a>
+<a class="bg-card-bg text-white border border-border-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-border-dark transition-colors inline-block" href="tel:9347049626">
+                        Call for Rates
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="fleet">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 px-4">
+<div>
+<h2 class="text-4xl font-black mb-3">Local Favorites</h2>
+<p class="text-gray-400">Pristine vehicles for every need in the Pearl City.</p>
+</div>
+<div class="flex bg-card-bg p-1.5 rounded-2xl mt-8 md:mt-0 border border-border-dark shadow-xl overflow-x-auto max-w-full">
+<button class="px-6 py-2.5 rounded-xl font-bold text-sm text-gray-400 hover:text-white transition-all whitespace-nowrap">Hatchback</button>
+<button class="px-6 py-2.5 rounded-xl font-bold text-sm text-gray-400 hover:text-white transition-all whitespace-nowrap">Sedan</button>
+<button class="px-6 py-2.5 bg-primary text-black rounded-xl font-bold text-sm shadow-lg whitespace-nowrap">SUV / MUV</button>
+<button class="px-6 py-2.5 rounded-xl font-bold text-sm text-gray-400 hover:text-white transition-all whitespace-nowrap">Premium</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group bg-card-bg rounded-3xl overflow-hidden border border-border-dark hover:border-primary/50 transition-all duration-500 luxury-gradient flex flex-col h-full">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center img-zoom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBI2RoC2xHi1IXQ7PkfRon0LpGnrCu0IelFUZk2c3VvYB8qrsK28eMihIlh6qWXsFBJwxxo9DewYiI4Mzglx2quePkeSmC1secS1to8NepqIHAPeZNkp3xUvpjyJLEGGsvdvCfFNoqqpIz_1UtSV6rx6CfDtlyPA6a-reFS6hxTdJOdma8QIxnjVb8YhFFz6ZY6lKqKcNOACkeJhdUvIFf7a1_X3clyJARH2GBdote_N99hgRxmJSUl3RcNEBijRvFCKKX0pm9Yxnk");'></div>
+<div class="absolute inset-0 car-card-overlay opacity-80"></div>
+<div class="absolute top-4 left-4 bg-primary/90 text-black px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider">Compact SUV</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative -mt-12 z-10">
+<div class="mb-4">
+<h3 class="text-2xl font-black text-white group-hover:text-primary transition-colors">Tata Punch</h3>
+<p class="text-primary font-bold text-lg">Price on Request</p>
+</div>
+<div class="space-y-3 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">settings</span>
+<span class="text-xs text-gray-300">Manual/AMT</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">airline_seat_recline_extra</span>
+<span class="text-xs text-gray-300">5 Seats</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">local_gas_station</span>
+<span class="text-xs text-gray-300">Petrol</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">verified_user</span>
+<span class="text-xs text-gray-300">5-Star Safety</span>
+</div>
+</div>
+</div>
+<a class="mt-auto block w-full text-center py-4 bg-primary text-black hover:brightness-110 rounded-2xl font-black transition-all shadow-lg" href="https://wa.me/919347049626?text=Interested%20in%20Tata%20Punch">Contact for Rates</a>
+</div>
+</div>
+<div class="group bg-card-bg rounded-3xl overflow-hidden border border-border-dark hover:border-primary/50 transition-all duration-500 luxury-gradient flex flex-col h-full">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center img-zoom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdq5Fn7Kobc7gIyCTHMKx_NiiFaQiKT9usphk68HG00zANBHfaOkwQaDahyUmClLaZryMsIPIa4km7vI_dJpybuQsZY1lzwkzS3w2txHKRxUbRB15zAKZo--_vMFltGpUz74tgUpgSXBYU2J7GAyLgpx7Kia7yT7CJQj94FA97YVSFaKGSo-p6K3BiKHqsu7SgON8b1M9-2wf7kTSGttm6ExeWfhVSEQBZrXkHlECcP_V5MQqoPsOhAuGo4XG3x9fTPyCkH57gisE");'></div>
+<div class="absolute inset-0 car-card-overlay opacity-80"></div>
+<div class="absolute top-4 left-4 bg-primary/90 text-black px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider">Hatchback</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative -mt-12 z-10">
+<div class="mb-4">
+<h3 class="text-2xl font-black text-white group-hover:text-primary transition-colors">Maruti Baleno</h3>
+<p class="text-primary font-bold text-lg">Price on Request</p>
+</div>
+<div class="space-y-3 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">settings</span>
+<span class="text-xs text-gray-300">Automatic</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">airline_seat_recline_extra</span>
+<span class="text-xs text-gray-300">5 Seats</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">local_gas_station</span>
+<span class="text-xs text-gray-300">Petrol</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">ac_unit</span>
+<span class="text-xs text-gray-300">Climate Control</span>
+</div>
+</div>
+</div>
+<a class="mt-auto block w-full text-center py-4 bg-primary text-black hover:brightness-110 rounded-2xl font-black transition-all shadow-lg" href="https://wa.me/919347049626?text=Interested%20in%20Maruti%20Baleno">Contact for Rates</a>
+</div>
+</div>
+<div class="group bg-card-bg rounded-3xl overflow-hidden border border-border-dark hover:border-primary/50 transition-all duration-500 luxury-gradient flex flex-col h-full">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center img-zoom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHYXGkLi4oMTdVnBvnAgGC6hX_tdFARJ26eaX2PnA6E_R7vGQ7B080qQfMrsbUtcUksk4sGy4UN9y789oBzdDUOhhmZVgCNgz6972IIiG7eWz7lWmZ0WFKfEp1Ekr40QoeW5dkMuj1x8G9p9Plf9xNJJHwMDF0vrNNm7xcnwuJeX5hSqmX8Gq8-UnHcAPcJtkVNn5_sfHelIxYL1bu1Z_YreKpgCyAd5acKtpCboEN4wLX4qgCKLb2-xv8rJ_xhkM6CIAq1Sv8CUI");'></div>
+<div class="absolute inset-0 car-card-overlay opacity-80"></div>
+<div class="absolute top-4 left-4 bg-primary/90 text-black px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider">MUV</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative -mt-12 z-10">
+<div class="mb-4">
+<h3 class="text-2xl font-black text-white group-hover:text-primary transition-colors">Maruti Ertiga</h3>
+<p class="text-primary font-bold text-lg">Price on Request</p>
+</div>
+<div class="space-y-3 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">settings</span>
+<span class="text-xs text-gray-300">Manual</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">airline_seat_recline_extra</span>
+<span class="text-xs text-gray-300">7 Seats</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">local_gas_station</span>
+<span class="text-xs text-gray-300">Petrol/CNG</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">family_restroom</span>
+<span class="text-xs text-gray-300">Family Favorite</span>
+</div>
+</div>
+</div>
+<a class="mt-auto block w-full text-center py-4 bg-primary text-black hover:brightness-110 rounded-2xl font-black transition-all shadow-lg" href="https://wa.me/919347049626?text=Interested%20in%20Maruti%20Ertiga">Contact for Rates</a>
+</div>
+</div>
+<div class="group bg-card-bg rounded-3xl overflow-hidden border border-border-dark hover:border-primary/50 transition-all duration-500 luxury-gradient flex flex-col h-full">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center img-zoom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdq5Fn7Kobc7gIyCTHMKx_NiiFaQiKT9usphk68HG00zANBHfaOkwQaDahyUmClLaZryMsIPIa4km7vI_dJpybuQsZY1lzwkzS3w2txHKRxUbRB15zAKZo--_vMFltGpUz74tgUpgSXBYU2J7GAyLgpx7Kia7yT7CJQj94FA97YVSFaKGSo-p6K3BiKHqsu7SgON8b1M9-2wf7kTSGttm6ExeWfhVSEQBZrXkHlECcP_V5MQqoPsOhAuGo4XG3x9fTPyCkH57gisE");'></div>
+<div class="absolute inset-0 car-card-overlay opacity-80"></div>
+<div class="absolute top-4 left-4 bg-primary/90 text-black px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider">Premium MUV</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative -mt-12 z-10">
+<div class="mb-4">
+<h3 class="text-2xl font-black text-white group-hover:text-primary transition-colors">Toyota Innova</h3>
+<p class="text-primary font-bold text-lg">Price on Request</p>
+</div>
+<div class="space-y-3 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">settings</span>
+<span class="text-xs text-gray-300">Auto/Manual</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">airline_seat_recline_extra</span>
+<span class="text-xs text-gray-300">7-8 Seats</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">local_gas_station</span>
+<span class="text-xs text-gray-300">Diesel</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">stars</span>
+<span class="text-xs text-gray-300">Elite Comfort</span>
+</div>
+</div>
+</div>
+<a class="mt-auto block w-full text-center py-4 bg-primary text-black hover:brightness-110 rounded-2xl font-black transition-all shadow-lg" href="https://wa.me/919347049626?text=Interested%20in%20Toyota%20Innova">Contact for Rates</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 luxury-gradient border border-border-dark rounded-[2.5rem] px-8 md:px-20 overflow-hidden relative shadow-2xl" id="services">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/2"></div>
+<div class="relative z-10">
+<h2 class="text-4xl font-black mb-16 text-white text-center md:text-left">Exclusive Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="flex flex-col md:flex-row gap-8 group">
+<div class="size-16 rounded-2xl bg-primary flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_rgba(255,184,0,0.2)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-black text-4xl">car_rental</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 text-primary">Self-Drive Rentals</h3>
+<p class="text-gray-400 leading-relaxed mb-6">Explore Hyderabad at your own pace. Our fleet is perfectly maintained for your safety and comfort.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-gray-300"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> 24/7 Roadside Support</li>
+<li class="flex items-center gap-3 text-sm text-gray-300"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Fully Insured Vehicles</li>
+<li class="flex items-center gap-3 text-sm text-gray-300"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Doorstep Delivery in Nagole</li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 group">
+<div class="size-16 rounded-2xl bg-primary flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_rgba(255,184,0,0.2)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-black text-4xl">cleaning_services</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 text-primary">Professional Foam Wash</h3>
+<p class="text-gray-400 leading-relaxed mb-6">Expert cleaning for your beloved car. We use premium snow foam and detailing techniques for a spotless finish.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-gray-300"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> pH Neutral Snow Foam</li>
+<li class="flex items-center gap-3 text-sm text-gray-300"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Interior Deep Clean</li>
+<li class="flex items-center gap-3 text-sm text-gray-300"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Tire &amp; Rim Detailing</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24" id="pricing">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black mb-4">Service Estimates</h2>
+<p class="text-gray-400 max-w-2xl mx-auto">High-quality care for your vehicle. Contact us for final quotes based on car size.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mx-auto">
+<div class="p-10 bg-card-bg rounded-3xl border border-border-dark flex flex-col luxury-gradient">
+<p class="text-xs font-black text-primary uppercase tracking-[0.2em] mb-4">Standard</p>
+<h4 class="text-2xl font-bold mb-4">Quick Foam Wash</h4>
+<p class="text-xl font-bold mb-8 text-white">Contact for Best Rates</p>
+<ul class="space-y-4 text-gray-400 mb-10 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Exterior Foam Wash</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Tire Polish</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Basic Vacuuming</li>
+</ul>
+<a class="w-full py-4 text-center bg-border-dark text-white hover:bg-white hover:text-black font-bold rounded-xl transition-all" href="tel:9347049626">Get Price</a>
+</div>
+<div class="p-10 bg-primary text-black rounded-3xl shadow-[0_0_40px_rgba(255,184,0,0.15)] flex flex-col transform scale-105 z-10">
+<p class="text-xs font-black uppercase tracking-[0.2em] mb-4 opacity-70">Most Popular</p>
+<h4 class="text-2xl font-bold mb-4">Full Detail</h4>
+<p class="text-xl font-bold mb-8">Contact for Best Rates</p>
+<ul class="space-y-4 font-bold mb-10 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">check</span> Interior Deep Clean</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">check</span> Dashboard Polishing</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">check</span> AC Vent Sanitize</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">check</span> Exterior Snow Wash</li>
+</ul>
+<a class="w-full py-4 text-center bg-black text-white font-bold rounded-xl shadow-xl hover:scale-105 transition-all" href="https://wa.me/919347049626">Enquire Now</a>
+</div>
+<div class="p-10 bg-card-bg rounded-3xl border border-border-dark flex flex-col luxury-gradient">
+<p class="text-xs font-black text-primary uppercase tracking-[0.2em] mb-4">The Best</p>
+<h4 class="text-2xl font-bold mb-4">Ceramic Coating</h4>
+<p class="text-xl font-bold mb-8 text-white">Contact for Best Rates</p>
+<ul class="space-y-4 text-gray-400 mb-10 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Multi-Stage Polish</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> 9H Ceramic Sealant</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check</span> Interior Protection</li>
+</ul>
+<a class="w-full py-4 text-center bg-border-dark text-white hover:bg-white hover:text-black font-bold rounded-xl transition-all" href="tel:9347049626">Get Price</a>
+</div>
+</div>
+</section>
+<section class="py-24" id="booking">
+<div class="max-w-5xl mx-auto bg-card-bg rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col md:flex-row border border-border-dark">
+<div class="md:w-2/5 bg-primary p-12 flex flex-col justify-between">
+<div>
+<h2 class="text-4xl font-black text-black mb-6 leading-tight">Get a Quick Quote</h2>
+<p class="text-black/80 font-bold leading-relaxed">Let us know your requirements, and we'll get back to you with the best rates in Hyderabad.</p>
+</div>
+<div class="flex flex-col gap-6 mt-12">
+<div class="flex items-center gap-4 text-black">
+<span class="material-symbols-outlined text-3xl">phone_iphone</span>
+<span class="font-black text-xl">+91 93470 49626</span>
+</div>
+<div class="flex items-center gap-4 text-black">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+<span class="font-black text-lg">Nagole, Hyderabad</span>
+</div>
+</div>
+</div>
+<div class="flex-1 p-12">
+<form action="https://wa.me/919347049626" class="grid grid-cols-1 md:grid-cols-2 gap-8" method="GET" target="_blank">
+<div class="flex flex-col gap-3">
+<label class="text-xs font-bold uppercase tracking-widest text-gray-400">Full Name</label>
+<input class="bg-dark-bg border border-border-dark rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary text-white text-sm outline-none transition-all placeholder:text-gray-600" name="text" placeholder="Your Name" type="text"/>
+</div>
+<div class="flex flex-col gap-3">
+<label class="text-xs font-bold uppercase tracking-widest text-gray-400">Mobile Number</label>
+<input class="bg-dark-bg border border-border-dark rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary text-white text-sm outline-none transition-all placeholder:text-gray-600" placeholder="+91" type="tel"/>
+</div>
+<div class="flex flex-col gap-3">
+<label class="text-xs font-bold uppercase tracking-widest text-gray-400">Car / Service Model</label>
+<select class="bg-dark-bg border border-border-dark rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary text-white text-sm outline-none transition-all">
+<optgroup label="Car Rentals">
+<option>Tata Punch</option>
+<option>Maruti Baleno</option>
+<option>Maruti Ertiga</option>
+<option>Toyota Innova</option>
+</optgroup>
+<optgroup label="Car Wash">
+<option>Standard Foam Wash</option>
+<option>Full Detailing</option>
+<option>Ceramic Coating</option>
+</optgroup>
+</select>
+</div>
+<div class="flex flex-col gap-3">
+<label class="text-xs font-bold uppercase tracking-widest text-gray-400">Preferred Date</label>
+<input class="bg-dark-bg border border-border-dark rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary text-white text-sm outline-none transition-all [color-scheme:dark]" type="date"/>
+</div>
+<div class="flex flex-col gap-3 md:col-span-2">
+<label class="text-xs font-bold uppercase tracking-widest text-gray-400">Details (Optional)</label>
+<textarea class="bg-dark-bg border border-border-dark rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary text-white text-sm outline-none transition-all placeholder:text-gray-600" placeholder="Specific model preference, location, etc." rows="3"></textarea>
+</div>
+<button class="md:col-span-2 py-5 bg-primary text-black font-black text-xl rounded-2xl shadow-xl hover:brightness-110 transition-all hover:translate-y-[-2px] uppercase tracking-wider">
+                        Send WhatsApp Quote Request
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<section class="py-24" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-black mb-8">Visit Us in Nagole</h2>
+<p class="text-gray-400 mb-12 leading-relaxed text-lg">Located conveniently for the eastern parts of Hyderabad. Drop by for a premium wash or to check out our fleet.</p>
+<div class="space-y-10">
+<div class="flex gap-6 group">
+<div class="size-14 rounded-2xl bg-card-bg border border-border-dark text-primary flex items-center justify-center flex-shrink-0 transition-colors group-hover:border-primary">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<div>
+<h5 class="font-black text-lg mb-1">Our Address</h5>
+<p class="text-gray-400">Golden Car Rentals &amp; Washing, 9H86+CMG, Margadarshi Colony Rd No. 3, Sai Nagar, Nagole, Hyderabad, Telangana 500068</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="size-14 rounded-2xl bg-card-bg border border-border-dark text-primary flex items-center justify-center flex-shrink-0 transition-colors group-hover:border-primary">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+</div>
+<div>
+<h5 class="font-black text-lg mb-1">Business Hours</h5>
+<p class="text-gray-400">Everyday: 8:00 AM - 9:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-3xl overflow-hidden shadow-2xl h-[450px] border border-border-dark bg-card-bg relative group">
+<iframe allowfullscreen="" height="100%" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6749718449914!2d78.5630327!3d17.3820245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaeb2e75%3A0x6d0590859345c225!2sNagole%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" style="border:0; filter: grayscale(1) invert(0.9) contrast(1.2);" width="100%"></iframe>
+<div class="absolute inset-0 pointer-events-none border-[12px] border-card-bg/50"></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-card-bg border-t border-border-dark py-20 mt-20">
+<div class="max-w-[1280px] mx-auto px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-8">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-black tracking-tighter text-white">GOLDEN CARS</h2>
+</div>
+<p class="text-gray-400 leading-relaxed mb-8">
+                    Hyderabad's trusted name for reliable car rentals and professional foam washing services since 2015.
+                </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-xl bg-dark-bg border border-border-dark flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all" href="https://wa.me/919347049626">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+<a class="size-10 rounded-xl bg-dark-bg border border-border-dark flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all" href="tel:9347049626">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-white mb-8 uppercase tracking-widest text-sm">Navigation</h5>
+<ul class="space-y-4 text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#fleet">Our Fleet</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Foam Wash</a></li>
+<li><a class="hover:text-primary transition-colors" href="#pricing">Price Estimates</a></li>
+<li><a class="hover:text-primary transition-colors" href="#contact">Location</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-8 uppercase tracking-widest text-sm">Our Fleet</h5>
+<ul class="space-y-4 text-gray-400">
+<li>Tata Punch</li>
+<li>Maruti Baleno</li>
+<li>Maruti Ertiga</li>
+<li>Toyota Innova</li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-8 uppercase tracking-widest text-sm">Contact Details</h5>
+<p class="text-gray-400 mb-4 text-sm">Nagole, Hyderabad</p>
+<p class="text-primary font-bold mb-4">+91 93470 49626</p>
+<p class="text-gray-400 text-xs">Margadarshi Colony Rd No. 3, Nagole</p>
+</div>
+</div>
+<div class="border-t border-border-dark pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-sm text-gray-500">© 2024 Golden Car Rentals &amp; Foam Wash. Nagole, Hyderabad.</p>
+<p class="text-sm text-gray-500 flex items-center gap-2">Built for Excellence <span class="material-symbols-outlined text-sm text-primary">auto_awesome</span></p>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-8 right-8 flex flex-col gap-4 z-40">
+<a class="size-16 bg-[#25D366] text-white rounded-2xl flex items-center justify-center shadow-2xl hover:scale-110 transition-transform" href="https://wa.me/919347049626" target="_blank">
+<span class="material-symbols-outlined text-4xl">chat</span>
+</a>
+<a class="size-16 bg-primary text-black rounded-2xl flex items-center justify-center shadow-2xl hover:scale-110 transition-transform" href="tel:9347049626">
+<span class="material-symbols-outlined text-4xl">call</span>
+</a>
+</div>
+
+</body></html>
